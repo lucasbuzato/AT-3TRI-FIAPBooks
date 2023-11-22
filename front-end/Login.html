@@ -40,24 +40,28 @@
       
     <main>
         
-        <h2 class="mt-5 mb-5">Fiap Books</h2>
-    <div class="container d-flex flex-column justify-content-center w-25 center p-3 mt-5 mb-2 bg-dark rounded">
+      <form action="/login" method="post">
+        <h2 class="mt-5 mb-5">login</h2>
+        <div class="container d-flex flex-column justify-content-center w-25 center p-3 mt-5 mb-2 bg-dark rounded">
 
-        <input type="nome" class="form-control  mr-sm-2 mb-2 " id="nome" placeholder="Nome">
-
-        <input type="email" class="form-control  mr-sm-2 mb-2 " id="email" placeholder="E-mail">
-
-        <input type="password" class="form-control  mr-sm-2 mb-2" id="password" placeholder="Senha">
-        <div class="ButtonLogin mt-4">
-        <button id="loginButton" class="form-control mr-sm-2" onclick="loginEmail()">Entrar</button>
+          <label for="inputnome" class="col-form-label text-white">nome</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="nome">
+          </div>
+          <label for="inputemail" class="col-form-label text-white" >email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" name="email">
+          </div>
+          <label for="inputsenha" class="col-form-label text-white" >senha</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" name="senha">
+          </div>
+        <button type="submit" class="mt-4 btn-outline-light">login</button>
       </div>
-    </div>
+      </div>
+      </form>
 </div>
     </main>
-
-
-
-
 
 
     <footer>
@@ -77,4 +81,7 @@
             </footer>
           </div>
       </footer>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
